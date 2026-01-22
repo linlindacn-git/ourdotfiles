@@ -14,7 +14,8 @@ sudo apt-get update
 sudo apt-get install -y grafana
 
 # Start Grafana service
-sudo service grafana-server start
+#sudo service grafana-server start
+sudo /bin/systemctl start grafana-server
 
 echo "Grafana installation complete!"
 echo "to use it, forward port 3000"
